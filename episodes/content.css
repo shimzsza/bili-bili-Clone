@@ -1,0 +1,615 @@
+.content {
+    position: relative;
+    top: 63px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(228, 229, 230, 0.349);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    padding-bottom: 5rem;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+}
+.parent-boxes-one {
+    width:70%;
+    height: auto;
+}
+.parent-boxes-two {
+    width:30%;
+    height: auto;
+    padding: 0 1.5rem;
+    padding-bottom: 5rem;
+}
+
+.video-holder {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(24, 24, 24);
+    position: relative;
+}
+
+.video-holder:active {
+    cursor: pointer;
+}
+
+#playbtnmiddle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* must be higher than the video */
+  cursor: pointer;
+}
+#solo-leveling {
+  z-index: 1;
+  position: relative; /* important for stacking */
+}
+
+
+
+.popup-video-buttons {
+  width: 100%;
+  height: 500px;
+  background: transparent;
+  z-index: 10;
+  border-radius: 5px;
+  padding: 10px 0px;
+  position: absolute;
+  opacity: 0;
+  transform: translateY(0px);
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+  top: 40px;
+
+}
+.range {
+    width: 95%;
+    height: 2px;
+    margin-left: 25px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    margin-top: 450px;
+}
+.buttonsFlex {
+    width: 100%;
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+}
+.flexall {
+    opacity: 0;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.vidspeed {
+    padding-left: 5rem;
+}
+.playyyy {
+     margin-top: 0.5rem;
+     cursor: pointer;
+}
+.btns {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    font-size: 14px;
+    cursor: pointer;
+}
+input[type=range] {
+
+  outline: none;
+}
+
+
+.like-mylist-sendcomment-parent {
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    display: flex;
+}
+.like-mylist-sendcomment-children {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.like {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.like:hover {
+    color: rgb(76, 76, 249);
+}
+
+.thumbsup-icon, .danmaku-icon, .mylist-icon {
+    margin-left: 1rem;
+}
+.number-of-likes, .mylist{
+    font-size: 13px;
+}
+.like-mylist-sendcomment-children {
+    display: flex;
+    align-items: center;
+}
+.text-comment-box {
+    width: 65%;
+    height: 35px;
+    padding-left: 1rem;
+    margin-left: 0.5rem;
+    background-color: rgb(243, 242, 242);
+    border: none;
+    outline: none;
+}
+.send {
+    width: 70px;
+    height: 35px;
+    background-color: rgb(85, 160, 252);
+    border: none;
+    margin-left: -5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.vid-title-parent {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.vid-left-title-child{
+    width: 90%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: rgb(37, 37, 37);
+}
+.vid-right-title-feedback {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feedback-icon {
+    cursor: pointer;
+}
+.vid-genre {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+}
+.views {
+    color: rgb(79, 79, 79);
+    font-size: 14px;
+}
+.premium {
+    color: #ff4a80;
+}
+
+.btngrenre {
+    height: 25px;
+    margin-left: 0.5rem;
+    padding: 0 0.5rem;
+    border: none;
+    background-color: rgb(220, 219, 219);
+    border-radius: 3px;
+}
+.btngrenre-anime {
+    background-color: rgb(207, 232, 252);
+    color: rgb(43, 165, 252);
+}
+.vid-desc {
+    width: 95%;
+    height: 220px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.initial {
+    line-height: 20px;
+}
+.commentsec-best-recent-parent-box, .commentsec-best-recent-parent-box2 {
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.commentsec-best-recent-child-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-top: 1px solid rgb(172, 172, 172);
+}
+.no-of-comments {
+    font-size: 14px;
+    padding-left: 1rem;
+}
+
+.best {
+    padding-left: 19rem;
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+}
+.recent-title {
+    padding-left: 2rem;
+    font-size: 14px;
+    cursor: pointer;
+    color: rgb(75, 75, 75);
+}
+
+.commentsec-user-icon-commentbox-parent, .commentsec-user-icon-commentbox-parent2 {
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+.commentsec-user-icon-commentbox-child-firstbox {
+    width: 5%;
+    display: flex;
+}
+.profile-pic-com-sec {
+    width: 100%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+.commentsec-user-icon-commentbox-child-secondbox {
+    width: 100%;
+    display: flex;
+}
+
+.com-sec-box {
+    margin-left: 1rem;
+    width: 95%;
+    height: 50px;
+    border-radius: 3px;
+    padding-left: 1rem;
+    border: none;
+    background-color: rgb(235, 236, 236);
+    outline: none;
+}
+.send-commentbtn {
+    width: 70px;
+    font-size: 15px;
+    height: 20px;
+    margin-left: -70px;
+    margin-top: 25px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    color: rgb(113, 113, 113);
+}
+.send-commentbtn:hover {
+
+    color: rgb(85, 160, 252);
+}
+
+
+
+
+
+
+.other-comments-parent, .other-comments-parent2 {
+    display: flex;
+    width: 100%;
+    height: 170px;
+    margin-top: 1rem;
+}
+.other-comments-child-pic {
+    width: 5%;
+    height: 100%;
+    margin-right: 1rem;
+}
+.profile-pic-com-sec-others {
+    width: 100%;
+    border-radius: 50%;
+    
+}
+.other-comments-child-name-comment {
+    width: 90%;
+    height: 100%;
+}
+.other-comments-grandchild-name {
+    width: 100%;
+    height: 20%;
+    font-weight: bold;
+}
+.other-comments-grandchild-comment {
+    width: 100%;
+    height: 30px;
+}
+.other-comments-grandchild-like-replyBtn {
+    width: 100%;
+    height: 30px;
+     display: flex;
+     align-items: center;
+}
+
+.likeit-reply-report {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+.more-replies-parent, .more-replies-parent2 {
+    width: 15%;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.more-replies-parent:hover, .more-replies-parent2:hover {
+    color: rgb(85, 160, 252);
+}
+
+
+
+/* Desktop styles */
+@media (min-width: 1200px) {
+ .other-comments-parent2 {
+    display: none;
+}
+
+.more-replies-parent2 {
+display: none;
+}
+
+.commentsec-best-recent-parent-box2 {
+    display: none;
+}
+
+.commentsec-user-icon-commentbox-parent2 {
+    display: none;
+}
+
+.other-comments-parent2 {
+    display: none;
+}
+
+.more-replies-parent2 {
+    display: none;
+}
+
+.profile-pic-com-sec {
+    display: none;
+}
+.com-sec-box {
+  display: none;
+}
+.commentsec-best-recent-child-box {
+    display: none;
+}
+
+}
+
+
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .content {
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    padding: 1.5rem 2rem;
+    padding-bottom: 5rem;
+}
+.parent-boxes-one {
+    width:100%;
+    height: 1400px;
+}
+.parent-boxes-two {
+    width:100%;
+    height: 1400px;
+}
+
+.video-holder {
+    width: 100%;
+    height: auto;
+}
+.popup-video-buttons {
+  width: 100%;
+  height: 500px;
+  top: -15%;
+
+}
+
+.btns {
+    margin-left: 1.2rem;
+    margin-top: 0.5rem;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.commentsec-best-recent-parent-box2 {
+    display: none;
+}
+
+.commentsec-user-icon-commentbox-parent2 {
+    display: none;
+}
+
+.other-comments-parent2 {
+    display: none;
+}
+
+.more-replies-parent2 {
+    display: none;
+}
+
+.profile-pic-com-sec {
+    display: none;
+}
+.com-sec-box {
+  display: none;
+}
+.commentsec-best-recent-child-box {
+    display: none;
+}
+
+}
+
+
+
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .content {
+    display: block;
+    padding: 0;
+}
+
+.parent-boxes-one {
+    width:100%;
+    height: auto;
+    padding: 1.5rem 1rem;
+}
+.parent-boxes-two {
+    width:100%;
+    height: auto;
+}
+.popup-video-buttons {
+  width: 100%;
+  height: 500px;
+  top: -95%;
+
+}
+
+.range {
+    width: 90%;
+}
+.buttonsFlex {
+    width: 100%;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+}
+.flexall {
+    opacity: 0;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.vidspeed {
+    padding-left: 0rem;
+}
+.btns {
+    margin-left: .5rem;
+    margin-top: 0.5rem;
+    font-size: 12px;
+}
+.like {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+
+}
+
+.vid-title-parent {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin: 1rem 0;
+}
+
+.vid-genre {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    margin: 1rem 0;
+}
+.views {
+    color: rgb(79, 79, 79);
+    font-size: 14px;
+}
+.premium {
+    color: #ff4a80;
+}
+
+.btngrenre {
+    height: 25px;
+    margin-left: 0.5rem;
+    padding: 0 0.5rem;
+    border: none;
+    background-color: rgb(220, 219, 219);
+    border-radius: 3px;
+    font-size: 10px;
+}
+.vid-desc {
+    width: 100%;
+    height: auto;
+}
+.initial {
+    line-height: 20px;
+}
+
+.commentsec-best-recent-parent-box {
+    display: none;
+}
+
+.commentsec-user-icon-commentbox-parent {
+    display: none;
+}
+
+.other-comments-parent {
+    display: none;
+}
+
+.more-replies-parent {
+    display: none;
+}
+
+
+/* 2 */
+.commentsec-best-recent-parent-box2 {
+    padding: 0 1rem;
+}
+
+.commentsec-user-icon-commentbox-parent2 {
+    padding: 0 1rem;
+}
+
+.other-comments-parent2 {
+    padding: 0 1rem;
+}
+
+.more-replies-parent2 {
+    padding: 0 1rem;
+}
+
+.profile-pic-com-sec {
+    width: 50px;
+}
+.com-sec-box {
+    width: 100%;
+    margin-left: 3rem;
+}
+.commentsec-best-recent-child-box {
+    width: 10%;
+}
+}

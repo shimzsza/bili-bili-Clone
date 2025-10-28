@@ -1,0 +1,429 @@
+.content {
+    position: relative;
+    top: 63px;
+    left: 260px;
+    width: 82.9%;
+    height: 900px;
+    background-color: rgba(228, 229, 230, 0.349);
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+.sched {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.sched-leftbox {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.releasecalendar-rightbox {
+    width: 30%;
+}
+.anime-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+.week-trending {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 2rem;
+    background-color: rgba(188, 199, 243, 0.349);
+    color: rgb(101, 138, 247);
+    cursor: pointer;
+}
+.week {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 2rem;
+    background-color: transparent;
+    font-size: 13px;
+}
+.week:hover {
+  cursor: pointer;
+  background-color: rgb(227, 227, 232);
+}
+.release-calendar-icon {
+    width: 170px;
+    height: 100%;
+    margin-left: 45%;
+    cursor: pointer;
+}
+.thumbnails-cont {
+    width: 100%;
+    min-height: 190px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(300px);
+    transition: all 0.3s ease-in-out;
+}
+.thumbnails-boxes {
+    width: 90%;
+    height: 270px;
+    transition: all 0.3s ease-in-out;
+}
+.thumbnail-img-first {
+    background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/slime3.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+
+}
+
+.thumbnail-img-second {
+    background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/second-thumbnail.jpeg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+  
+}
+.thumbnail-img-third {
+    background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/third-thumbnail.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+  
+}
+.thumbnail-img-fourth {
+    background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/jujutsu-kaisen.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+  
+}
+
+.thumbnail-inside-parag {
+    display: flex;
+    justify-content: end;
+    padding-top: 8.5rem;
+    margin-right: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+}
+.series-title{
+    margin: 10px;
+    width: 90%;
+    font-size: 17px;
+    cursor: pointer;
+}
+.parag-holder-thumbnail {
+    margin: 0 10px;
+    width: 90%;
+    font-size: 14px;
+    color: gray;
+}
+.recommendations {
+    width: 100%;
+    height: 600px;
+    margin-top: 90px;
+}
+.title-recommendation {
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* recommendations */
+.thumbnail-img-first-rec {
+    background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/windbreaker.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.thumbnail-img-second-rec {
+        background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/tokyo-ghoul.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.thumbnail-img-third-rec {
+        background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/bleach.jpeg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.thumbnail-img-fourth-rec {
+        background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/bungo-stray-dogs.png') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.thumbnail-img-fifth-rec {
+        background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/demonslayer.png') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.thumbnail-img-six-rec {
+        background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/jujutsu-kaisen-s2.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.thumbnail-img-seven-rec {
+        background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/slime3.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.thumbnail-img-eight-rec {
+        background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/sakamoto.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.thumbnail-img-nine-rec {
+        background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/yourname.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.thumbnail-img-ten-rec {
+        background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/blackbutler.png') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.thumbnail-img-eleven-rec {
+        background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/hunterx.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.thumbnail-img-twelve-rec {
+        background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/kakegurui.png') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.thumbnail-img-thirteen-rec {
+        background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/second-thumbnail.jpeg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.thumbnail-img-fourteen-rec {
+        background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/solo-leveling-first-season.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.thumbnail-img-fifteen-rec {
+        background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/slime2.jpeg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.thumbnail-img-sixteen-rec {
+        background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/fourth-thumbnail.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* Desktop styles */
+@media (min-width: 1200px) {
+  /* styles for desktop */
+}
+
+
+
+
+
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .content {
+    left: 80px;
+    width: 100%;
+    padding: 2rem 5rem;
+    height: auto;
+    height: 330vh;
+  }
+  
+  .thumbnails-cont {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sched {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.sched-leftbox {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+.releasecalendar-rightbox {
+    width: 30%;
+}
+}
+
+
+
+
+
+
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    .content {
+    left: 0;
+    width: 100%;
+    padding: 2rem 1rem;
+    height: auto;
+    height: 330vh;
+  }
+
+  .thumbnails-cont {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.sched {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.sched-leftbox {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.week-trending {
+    width: 70px;
+    height: 30px;
+    margin-left: 1rem;
+}
+
+
+.releasecalendar-rightbox {
+    width: 30%;
+}
+
+
+
+
+.thumbnails-boxes {
+    width: 100%;
+    height: 300px;
+    transition: all 0.3s ease-in-out;
+}
+
+}
+
+
+
+
+
+

@@ -1,0 +1,438 @@
+/* Search bar pop up box */
+.popup-box-search {
+  position: absolute;
+  top: 55px; 
+  left: 290px;
+  display: none;
+  background: white;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 580px;
+  height: 650px;
+  border-radius: 5px;
+  overflow-y: scroll;
+scrollbar-width: none;
+}
+
+.btnsearched {
+  min-width: 90px;
+  max-width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  margin: 3px;
+  padding:0 1rem;
+  overflow: hidden;
+  background-color: rgb(211, 209, 209);
+}
+.popup-box-search-childboxes-one {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  padding-left: 2rem;
+
+}
+.popup-box-search-childboxes-two {
+  display: inline-block;
+  width: 100%;
+  min-height: 90px;
+  padding-left: 2rem;
+
+}
+
+.popup-box-search-childboxes-three {
+  min-height: 80px;
+  padding-top: 2rem;
+  padding-left: 2rem;
+
+}
+
+.popup-box-search-childboxes-four {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: minmax(300px);
+
+}
+.trending-anime-thumbnails-childboxes {
+  display: flex;
+  padding: 0.5rem 0rem;
+}
+.span-search-title, .Trending-Anime {
+font-size: 25px;
+font-weight: bold;
+}
+.Trending-Anime {
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+
+.gs-pic-holder {
+  width: 60px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-left:2rem;
+  cursor: pointer;
+}
+.super-gs {
+  width: 100%;
+}
+.gs-text-holder {
+  font-size: 15px;
+  font-weight:lighter;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+}
+
+.gs-text-holder-thumb-dec {
+  padding: 0rem 1rem;
+  padding-top: 1rem;
+  font-size: 12px;
+  color: rgb(84, 83, 83);
+}
+
+
+/*upload video pop up box*/
+.popup-box-upload {
+    position: absolute;
+    top: 50px; 
+    right: 350px;
+    display: none;
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 270px;
+    border-radius: 5px;
+    padding: 10px 0px;
+    padding: 0 1.5rem;
+  }
+
+  .popup-box-clock {
+    position: absolute;
+    top: 50px; 
+    right: 300px;
+    display: none;
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 550px;
+    border-radius: 5px;
+
+  }
+
+  .popup-box-bookmark {
+    position: absolute;
+    top: 50px; 
+    left: 900px;
+    display: none;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 550px;
+    border-radius: 5px;
+  }
+  
+
+  /* upload childboxes */
+  .popup-box-upload-childboxes {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0px 2rem;
+  }
+  .popup-box-upload-childboxes:hover {
+    cursor: pointer;
+    background-color: rgb(222, 222, 222);
+  }
+  .popup-box-upload-childboxes-one {
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(205, 204, 204);
+  }
+  .span-uploadvid {
+    padding-left: 1rem;
+  }
+.popup-box-clock{
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+  .popup-box-clock-childboxes {
+    padding: 1rem 2rem;
+    display: flex;
+    width: 100%;
+    height: 130px;
+    gap: 10px;
+
+  }
+.popup-box-clock-childboxes-one {
+  width: 100%;
+  height: 80px;
+}
+  /* clock child boxes */
+  .today-title {
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.clock-today-watch-thumbnail {
+  background: 
+  linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/fourth-thumbnail.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.clock-earlier-watch-thumbnail {
+    background: 
+  linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/vincenzo.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  padding: 10px;
+}
+.clock-earlier-watch-thumbnail2 {
+    background: 
+  linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/demonslayer.png') no-repeat center / cover;
+  border-radius: 7px;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  padding: 10px;
+}
+.clock-earlier-watch-thumbnail3 {
+    background: 
+  linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/bungo-stray-dogs.png') no-repeat center / cover;
+  border-radius: 7px;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  padding: 10px;
+}
+.clock-earlier-watch-thumbnail4 {
+    background: 
+  linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/bleach.jpeg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  padding: 10px;
+}
+.clock-earlier-watch-thumbnail5 {
+    background: 
+  linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/jujutsu-kaisen.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  padding: 10px;
+}
+.clock-earlier-watch-thumbnail6 {
+    background: 
+  linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/windbreaker.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  padding: 10px;
+}
+.clock-earlier-watch-thumbnail7 {
+    background: 
+  linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/kakegurui.png') no-repeat center / cover;
+  border-radius: 7px;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  padding: 10px;
+}
+.today-thumbnail-inside-parag {
+display: flex;
+justify-content: end;
+padding-top: 55px;
+color: white;
+font-weight: bold;
+font-size: 13px;
+}
+progress {
+  width: 100%;
+  height: 8px;
+  accent-color: white;
+  margin-bottom: 5px;
+}
+.span-clock-title {
+  font-weight: bold;
+  cursor: pointer;
+}
+.parag-today {
+  line-height: 30px;
+  font-size: 13px;
+  color: gray;
+}
+.parag-today-bottom {
+  padding-top: 25px;
+}
+
+.popup-box-clock-childboxes-three {
+  width: 100%;
+  height: 80px;
+}
+.earlier-title{
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+.viewallcont {
+    width: 320px;
+    height: 50px;
+    margin-left: 2.2rem;
+    position: fixed;
+    bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.viewall{
+  width: 320px;
+  height: 35px;
+  background-color: rgb(106, 194, 249);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}     
+
+.popup-box-clock-childboxes-last {
+  margin-bottom: 5rem;
+}     
+
+/* bookmark part */
+
+.popup-box-bookmark{
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+.bookmark-viewall-button {
+  right: 265px;
+}
+.bookmark-first-box {
+  margin-top: 2rem;
+}
+.last-box-bookmark {
+  margin-bottom: 5rem;
+}
+
+
+
+
+/* Desktop styles */
+@media (min-width: 1200px) {
+  /* styles for desktop */
+}
+
+
+
+
+
+
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .search{
+    display: none;
+}
+
+.header-two {
+    width: 590px;
+}
+.header-three {
+    width: 230px;
+}
+.fa-magnifying-glass{
+    display: none;
+}
+.mediasearch {
+    display: block;
+}
+.popup-box-upload {
+    right: 350px;
+}
+
+.popup-box-clock {
+  right: 350px;
+}
+
+.popup-box-bookmark {
+    right: 350px;
+}
+}
+
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .fa-clock,
+  .fa-bookmark {
+    display: none !important;
+  }
+
+.search{
+    display: none;
+}
+.fa-magnifying-glass{
+    display: none;
+}
+.mediasearch {
+    display: block;
+}
+
+
+.btn-download-app, .btn-topup, .btn-premium{
+    display: none;
+}
+.header-four {
+    width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.more {
+    display: block;
+}
+.popup-box-upload {
+    right: 350px;
+}
+
+.popup-box-clock {
+  right: 350px;
+}
+
+.popup-box-bookmark {
+    right: 350px;
+}
+}

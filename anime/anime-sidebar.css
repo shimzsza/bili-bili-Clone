@@ -1,0 +1,124 @@
+.sidebar {
+    transition: all 1s ease-in-out;
+}
+
+.sidebar-mainbox {
+    width: 260px;
+    transition: width 0.5s ease;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    height: 900px;
+    position: fixed;
+    top: 63px;
+    z-index: 998;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-collapsed {
+    width: 0px;
+}
+
+/* For the icons and spans inside */
+.menu-tags span,
+.sidebar-icon1,
+.sidebar-icon2,
+.sidebar-icon3,
+.sidebar-icon4,
+#followings,
+#side-footer {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* hide with transition */
+.sidebar-collapsed .menu-tags span,
+.sidebar-collapsed .sidebar-icon1,
+.sidebar-collapsed .sidebar-icon2,
+.sidebar-collapsed .sidebar-icon3,
+.sidebar-collapsed .sidebar-icon4,
+.sidebar-collapsed #followings,
+.sidebar-collapsed #side-footer {
+    opacity: 0;
+    transform: translateX(-20px);
+    pointer-events: none;
+}
+
+.sidebar-childbox-one {
+    width: 100%;
+}
+.menu-home-tag, .menu-anime-tag, .menu-trending-tag, .menu-category-tag {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+/*Home section*/
+.menu-anime-tag {
+    background-color: rgb(226, 244, 252);
+}
+.span-anime {
+    font-weight: bold;
+}
+.menu-anime-tag:hover {
+    cursor: pointer;
+    background-color: rgb(208, 239, 253);
+}
+.menu-home-tag:hover, .menu-trending-tag:hover, .menu-category-tag:hover {
+    cursor: pointer;
+   background-color: rgb(222, 222, 222);
+}
+.fa-house, .fa-tv, .fa-fire, .fa-table-list, .span-home, .span-anime, .span-trending, .span-category, .side-following-title, .accounts-icon, .side-following-p-acc {
+    margin-left: 2rem;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+}
+
+.side-following-title {
+    margin-top: 50px;
+    color: grey;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.side-following-accounts {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.side-following-accounts:hover {
+    cursor: pointer;
+}
+.accounts-icon{
+    width: 30px;
+    border-radius: 100%;
+}
+
+.side-footer {
+    margin-top: 30px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.side-footer-box {
+    display: flex;
+    gap: 10px;
+    margin-left: 2rem;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+.a-all {
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+}
+.a-all:hover {
+    color: darkblue;
+}
+.all-right-reserve {
+    margin-top: 30px;
+    color: gray;
+}

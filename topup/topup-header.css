@@ -1,0 +1,190 @@
+.header{
+    width: 100%;
+    display: flex;
+    height: 4rem;
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+}
+.headerbox {
+    display: flex;
+    align-items: center;
+    
+}
+.header-one {
+    width: 260px;
+    margin-left: 2rem;
+}
+.header-two {
+    width: 690px;
+    overflow: hidden;
+}
+.header-three {
+    width: 150px;
+    padding: 0 1rem;
+    justify-content: first baseline;
+    gap: 30px;
+}
+.header-four {
+    width: 430px;
+}
+.fa-bars {
+    margin: 2rem;
+    font-size: 20px;
+}
+.fa-magnifying-glass{
+    font-size: 13px;
+    margin-left: -83%;
+    color: rgb(146, 146, 146);
+}
+
+/* box1 */
+.bilibili-logo{
+width: 30px;
+height: 30px;
+cursor: pointer;
+}
+.bilibili-text{
+    width: 60px;
+    height: 25px;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+/* box2 */
+.search{
+    height: 40px;
+    width: 85%;
+    margin-left: 30px;
+    padding-left: 35px;
+    background-color: rgb(239, 239, 239);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.search::placeholder{
+font-size: 14px;
+}
+
+/* box3 */
+.mediasearch {
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+.fa-arrow-up-from-bracket, .fa-clock, .fa-bookmark {
+    font-size: 20px;
+    padding: 10px 0;
+}
+/* box4 */
+.btn-download-app, .btn-topup, .btn-premium, .profile-icon{
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+}
+.btn-download-app {
+    width: 70px;
+    height: 30px;
+    padding-right: 7px;
+}
+.fa-download {
+    font-size: 17px;
+    margin: 2px;
+}
+.btn-topup {
+    width: 85px;
+    height: 30px;
+}
+.btn-premium {
+    width: 90px;
+    height: 30px;
+    background-color: #ff4a80;
+    color: white;
+}
+.more {
+    display: none;
+    cursor: pointer;
+}
+.profile-icon {
+    width: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+i{
+    cursor: pointer;
+}
+
+
+
+/* Desktop styles */
+@media (min-width: 1200px) {
+  /* styles for desktop */
+}
+
+
+
+
+
+
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .search{
+    display: none;
+}
+
+.header-two {
+    width: 590px;
+}
+.header-three {
+    width: 230px;
+}
+.fa-magnifying-glass{
+    display: none;
+}
+.mediasearch {
+    display: block;
+}
+}
+
+
+
+
+
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .fa-clock,
+  .fa-bookmark {
+    display: none !important;
+  }
+
+.search{
+    display: none;
+}
+.fa-magnifying-glass{
+    display: none;
+}
+.mediasearch {
+    display: block;
+}
+
+
+.btn-download-app, .btn-topup, .btn-premium{
+    display: none;
+}
+.header-four {
+    width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.more {
+    display: block;
+}
+
+}
+
+

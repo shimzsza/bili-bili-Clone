@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiliBili Clone</title>
+    <link rel="shortcut icon" href="/pictures/bilibili-logo-transparent.png" type="image">
+    <link rel="stylesheet" href="/main/main.css">
+    <link rel="stylesheet" href="topup-header.css">
+    <link rel="stylesheet" href="topup-sidebar.css">
+    <link rel="stylesheet" href="topup-content.css">
+    <link rel="stylesheet" href="/main/hover-interactive.css">
+    <link rel="stylesheet" href="/main/interactive-header-two.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=hd" />
+    </head>
+<body>
+    <section class="header">
+        <div class="headerbox header-one">
+            <a href="/main/index.html"><img class="bilibili-logo" src="/pictures/bilibili-logo.png" alt=""></a>
+            <a href="/main/index.html"><img class="bilibili-text" src="/pictures/bilibili-text.png" alt=""></a>
+        </div>
+
+
+        <div class="headerbox header-two">
+            <input class="search" id="search" type="search" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <div id="popup-box-search" class="popup-box-search">
+                <div class="popup-box-search-childboxes popup-box-search-childboxes-one">
+                    <span class="span-search-title">Search History</span>
+                </div>
+                <div class="popup-box-search-childboxes popup-box-search-childboxes-two">
+                   <button class="btnsearched">Vincenzo</button>
+                   <button class="btnsearched">The House of Us</button>
+                   <button class="btnsearched">Your Name</button>
+                   <button class="btnsearched">Demon Slayer</button>
+                   <button class="btnsearched">Wind Breaker S2</button>
+                   <button class="btnsearched">Attack on Titan</button>
+                   <button class="btnsearched">Hunter x Hunter</button>
+                   <button class="btnsearched">Jujutsu Kaisen S2</button>
+                   <button class="btnsearched">Bleach</button>
+                </div>
+                <div class="popup-box-search-childboxes popup-box-search-childboxes-three">
+                       <span class="Trending-Anime">Trending Anime</span>
+                </div>
+                <div class="popup-box-search-childboxes popup-box-search-childboxes-four">
+                    <div class="trending-anime-thumbnails-childboxes">
+                        <div class="grandchild-anime-thumbnail">
+                            <img class="gs-pic-holder" src="/pictures/fourth-thumbnail.jpg">
+                        </div>
+                        <div class="grandchild-anime-thumbnail">
+                            <div class="super-gs">
+                            <h6 class="gs-text-holder">Naruto Shippuden</h6>
+                            <p class="gs-text-holder-thumb-dec"><span class="firstdesc" style="border: 1px solid rgb(165, 165, 165); padding: 0 0.3rem;"> Comic adaptation </span>  | 1999 | Full</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending-anime-thumbnails-childboxes">
+                        <div class="grandchild-anime-thumbnail">
+                            <img class="gs-pic-holder" src="/pictures/yourname.jpg" alt="">
+                        </div>
+                        <div class="grandchild-anime-thumbnail">
+                            <div class="super-gs">
+                            <h6 class="gs-text-holder">Your Name</h6>
+                            <p class="gs-text-holder-thumb-dec"><span class="firstdesc" style="border: 1px solid rgb(165, 165, 165); padding: 0 0.3rem;">Romance Anime</span>  | 2016 | Full</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending-anime-thumbnails-childboxes">
+                        <div class="grandchild-anime-thumbnail">
+                            <img class="gs-pic-holder" src="/pictures/bungo-stray-dogs.png" alt="">
+                        </div>
+                        <div class="grandchild-anime-thumbnail">
+                            <div class="super-gs">
+                            <h6 class="gs-text-holder">Bungo Stray Dogs</h6>
+                            <p class="gs-text-holder-thumb-dec"><span class="firstdesc" style="border: 1px solid rgb(165, 165, 165); padding: 0 0.3rem;"> Action Anime </span>  | 2019 | Full</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending-anime-thumbnails-childboxes">
+                        <div class="grandchild-anime-thumbnail">
+                            <img class="gs-pic-holder" src="/pictures/sakamoto.jpg" alt="">
+                        </div>
+                        <div class="grandchild-anime-thumbnail">
+                            <div class="super-gs">
+                            <h6 class="gs-text-holder">Sakamoto</h6>
+                            <p class="gs-text-holder-thumb-dec"><span class="firstdesc" style="border: 1px solid rgb(165, 165, 165); padding: 0 0.3rem;"> Action Anime </span>  | 2025 | Updating</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending-anime-thumbnails-childboxes">
+                        <div class="grandchild-anime-thumbnail">
+                            <img class="gs-pic-holder" src="/pictures/hunterx.jpg" alt="">
+                        </div>
+                        <div class="grandchild-anime-thumbnail">
+                            <div class="super-gs">
+                            <h6 class="gs-text-holder">Hunter x Hunter</h6>
+                            <p class="gs-text-holder-thumb-dec"><span class="firstdesc" style="border: 1px solid rgb(165, 165, 165); padding: 0 0.3rem;"> Comic adaptation </span>  | 1999 | Full</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending-anime-thumbnails-childboxes">
+                        <div class="grandchild-anime-thumbnail">
+                            <img class="gs-pic-holder" src="/pictures/bleach.jpeg" alt="">
+                        </div>
+                        <div class="grandchild-anime-thumbnail">
+                            <div class="super-gs">
+                            <h6 class="gs-text-holder">Bleach</h6>
+                            <p class="gs-text-holder-thumb-dec"><span class="firstdesc" style="border: 1px solid rgb(165, 165, 165); padding: 0 0.3rem;"> Comic adaptation </span>  | 1996 | Updating</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending-anime-thumbnails-childboxes">
+                        <div class="grandchild-anime-thumbnail">
+                            <img class="gs-pic-holder" src="/pictures/demonslayer.png" alt="">
+                        </div>
+                        <div class="grandchild-anime-thumbnail">
+                            <div class="super-gs">
+                            <h6 class="gs-text-holder">Demon Slayer</h6>
+                            <p class="gs-text-holder-thumb-dec"><span class="firstdesc" style="border: 1px solid rgb(165, 165, 165); padding: 0 0.3rem;"> Comic adaptation </span>  | 2023 | Full</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending-anime-thumbnails-childboxes">
+                        <div class="grandchild-anime-thumbnail">
+                            <img class="gs-pic-holder" src="/pictures/third-thumbnail.jpg" alt="">
+                        </div>
+                        <div class="grandchild-anime-thumbnail">
+                            <div class="super-gs">
+                            <h6 class="gs-text-holder">Solo Leveling</h6>
+                            <p class="gs-text-holder-thumb-dec"><span class="firstdesc" style="border: 1px solid rgb(165, 165, 165); padding: 0 0.3rem;"> Novel adaptation </span>  | 2025 | Full</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="headerbox header-three">
+            <svg class="mediasearch" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+            <i class="fa-solid fa-arrow-up-from-bracket" id="uploadvideo"></i> <!-- uploadvideo icon -->
+
+            <!-- popups when clicks uploadvideo icon  -->
+            <div id="popup-box-upload" class="popup-box-upload">
+                <div class="popup-box-upload-childboxes popup-box-upload-childboxes-one">
+                    <i class="fa-solid fa-arrow-up-from-bracket upload-icon-child"></i>
+                    <span class="span-uploadvid">Upload Video</span>
+                </div>
+                <div class="popup-box-upload-childboxes">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m460-380 280-180-280-180v360ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    <span class="span-uploadvid">My Videos</span>
+                </div>
+                <div class="popup-box-upload-childboxes">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm491-80h69v-69l-69 69Zm-457 0h73l120-120h85L392-200h64l120-120h85L541-200h65l120-120h34v-440H200v509l69-69h85L234-200Zm72-200-56-56 177-177 80 80 147-147 56 56-203 204-80-80-121 120ZM200-200v-560 560Z"/></svg>
+                    <span class="span-uploadvid">Data Analysis</span>
+                </div>
+                <div class="popup-box-upload-childboxes">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                    <span class="span-uploadvid">Manage Interactions</span>
+                </div>
+            </div>
+            <!-- end -->
+
+            
+            <i class="fa-regular fa-clock" id="clock"></i> <!-- clock icon -->
+           
+            <!-- popups when clicks clock icon  -->
+            <div id="popup-box-clock" class="popup-box-clock">
+                <div class="viewallcont"><button class="viewall">View All</button></div>  
+
+                <!-- Today part -->
+                <div class="popup-box-clock-childboxes popup-box-clock-childboxes-one">
+                    <p class="today-title">Today</p>
+                </div>
+                <div class="popup-box-clock-childboxes">
+                    <div class="clock-today-watch-thumbnail">
+                        <p class="today-thumbnail-inside-parag">Full</p>
+                        <progress value="30" max="100"></progress>
+                    </div>
+                    <div class="clock-today-watch-parag">
+                    <p class="span-clock-title">Naruto Shippuden</p>
+                    <p class="parag-today">Last watched: E1 3:57 </p>
+                    <p class="parag-today parag-today-bottom">Today 19:24</p>
+                </div>
+                </div>
+                
+                <!-- Earlier part -->
+                <div class="popup-box-clock-childboxes popup-box-clock-childboxes-three">
+                    <p class="earlier-title">Earlier</p>
+                </div>
+                <div class="popup-box-clock-childboxes">
+                    <div class="clock-earlier-watch-thumbnail">
+                        <p class="today-thumbnail-inside-parag">Full</p>
+                        <progress value="90" max="100"></progress>
+                    </div>
+                    <div class="clock-today-watch-parag">
+                    <p class="span-clock-title">Vincenzo</p>
+                    <p class="parag-today">Last watched: E5 23:57 </p>
+                    <p class="parag-today parag-today-bottom">May 8, 2025</p>
+                </div>
+                </div>
+                <div class="popup-box-clock-childboxes">
+                    <div class="clock-earlier-watch-thumbnail2">
+                        <p class="today-thumbnail-inside-parag">Full</p>
+                        <progress value="20" max="100"></progress>
+                    </div>
+                    <div class="clock-today-watch-parag">
+                    <p class="span-clock-title">Demon Slayer</p>
+                    <p class="parag-today">Last watched: E2 04:32 </p>
+                    <p class="parag-today parag-today-bottom">May 7, 2025</p>
+                </div>
+                </div>
+                <div class="popup-box-clock-childboxes">
+                    <div class="clock-earlier-watch-thumbnail3">
+                        <p class="today-thumbnail-inside-parag">Full</p>
+                        <progress value="77" max="100"></progress>
+                    </div>
+                    <div class="clock-today-watch-parag">
+                    <p class="span-clock-title">Bungo Stray Dogs</p>
+                    <p class="parag-today">Last watched: E7 19:11 </p>
+                    <p class="parag-today parag-today-bottom">May 7, 2025</p>
+                </div>
+                </div>
+                 <div class="popup-box-clock-childboxes">
+                    <div class="clock-earlier-watch-thumbnail6">
+                        <p class="today-thumbnail-inside-parag">Full</p>
+                        <progress value="20" max="100"></progress>
+                    </div>
+                    <div class="clock-today-watch-parag">
+                    <p class="span-clock-title">Wind Breaker</p>
+                    <p class="parag-today">Last watched: E5 05:28 </p>
+                    <p class="parag-today parag-today-bottom">May 4, 2025</p>
+                </div>
+                </div>
+              <div class="popup-box-clock-childboxes">
+                    <div class="clock-earlier-watch-thumbnail5">
+                        <p class="today-thumbnail-inside-parag">Full</p>
+                        <progress value="10" max="100"></progress>
+                    </div>
+                    <div class="clock-today-watch-parag">
+                    <p class="span-clock-title">Jujutsu Kaisen</p>
+                    <p class="parag-today">Last watched: E1 02:13 </p>
+                    <p class="parag-today parag-today-bottom">May 5, 2025</p>
+                </div>
+                </div>
+                <div class="popup-box-clock-childboxes">
+                    <div class="clock-earlier-watch-thumbnail6">
+                        <p class="today-thumbnail-inside-parag">Full</p>
+                        <progress value="20" max="100"></progress>
+                    </div>
+                    <div class="clock-today-watch-parag">
+                    <p class="span-clock-title">Wind Breaker</p>
+                    <p class="parag-today">Last watched: E5 05:28 </p>
+                    <p class="parag-today parag-today-bottom">May 4, 2025</p>
+                </div>
+                </div>
+
+                <div class="popup-box-clock-childboxes popup-box-clock-childboxes-last">
+                    <div class="clock-earlier-watch-thumbnail7">
+                        <p class="today-thumbnail-inside-parag">Full</p>
+                        <progress value="40" max="100"></progress>
+                    </div>
+                    <div class="clock-today-watch-parag">
+                    <p class="span-clock-title">Kakegurui</p>
+                    <p class="parag-today">Last watched: E5 08:43 </p>
+                    <p class="parag-today parag-today-bottom">May 4, 2025</p>
+                </div>
+                </div>
+            </div>
+            <!-- end -->
+
+            <!-- bookmark icon -->
+            <i class="fa-regular fa-bookmark" id="bookmark"></i>
+
+            <!-- popups when clicks bookmark icon  -->
+            <div id="popup-box-bookmark" class="popup-box-bookmark">
+               <div class="viewallcont"><button class="viewall">View All</button></div> 
+
+                <div class="popup-box-clock-childboxes bookmark-first-box">
+                    <div class="clock-earlier-watch-thumbnail7">
+                        <p class="today-thumbnail-inside-parag">Full</p>
+                        <progress value="40" max="100"></progress>
+                    </div>
+                    <div class="clock-today-watch-parag">
+                    <p class="span-clock-title">Kakegurui</p>
+                    <p class="parag-today">Last watched: E5 08:43 </p>
+                    <p class="parag-today parag-today-bottom">May 4, 2025</p>
+                </div>
+                </div>
+               <div class="popup-box-clock-childboxes">
+                    <div class="clock-earlier-watch-thumbnail5">
+                        <p class="today-thumbnail-inside-parag">Full</p>
+                        <progress value="10" max="100"></progress>
+                    </div>
+                    <div class="clock-today-watch-parag">
+                    <p class="span-clock-title">Jujutsu Kaisen</p>
+                    <p class="parag-today">Last watched: E1 02:13 </p>
+                    <p class="parag-today parag-today-bottom">May 5, 2025</p>
+                </div>
+                </div>
+                <div class="popup-box-clock-childboxes">
+                    <div class="clock-today-watch-thumbnail">
+                        <p class="today-thumbnail-inside-parag">Full</p>
+                        <progress value="30" max="100"></progress>
+                    </div>
+                    <div class="clock-today-watch-parag">
+                    <p class="span-clock-title">Naruto Shippuden</p>
+                    <p class="parag-today">Last watched: E1 3:57 </p>
+                    <p class="parag-today parag-today-bottom">Today 19:24</p>
+                </div>
+                </div>
+               <div class="popup-box-clock-childboxes">
+                    <div class="clock-earlier-watch-thumbnail3">
+                        <p class="today-thumbnail-inside-parag">Full</p>
+                        <progress value="77" max="100"></progress>
+                    </div>
+                    <div class="clock-today-watch-parag">
+                    <p class="span-clock-title">Bungo Stray Dogs</p>
+                    <p class="parag-today">Last watched: E7 19:11 </p>
+                    <p class="parag-today parag-today-bottom">May 7, 2025</p>
+                </div>
+                </div>
+                <div class="popup-box-clock-childboxes">
+                    <div class="clock-earlier-watch-thumbnail">
+                        <p class="today-thumbnail-inside-parag">Full</p>
+                        <progress value="90" max="100"></progress>
+                    </div>
+                    <div class="clock-today-watch-parag">
+                    <p class="span-clock-title">Vincenzo</p>
+                    <p class="parag-today">Last watched: E5 23:57 </p>
+                    <p class="parag-today parag-today-bottom">May 8, 2025</p>
+                </div>
+                </div>
+                 <div class="popup-box-clock-childboxes last-box-bookmark">
+                    <div class="clock-earlier-watch-thumbnail6">
+                        <p class="today-thumbnail-inside-parag">Full</p>
+                        <progress value="20" max="100"></progress>
+                    </div>
+                    <div class="clock-today-watch-parag">
+                    <p class="span-clock-title">Wind Breaker</p>
+                    <p class="parag-today">Last watched: E5 05:28 </p>
+                    <p class="parag-today parag-today-bottom">May 4, 2025</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerbox header-four">
+            <button class="btn-download-app" id="btn-download-app"><i class="fa-solid fa-download"></i> App</button>
+
+            <!-- popups when clicks downloadapp icon  -->
+            <div id="popup-box-download" class="popup-box-download">
+                <div class="downloadapp-child">
+                    <p class="downloadapp-title">Download the App to enjoy more features</p>
+                </div>
+                <div class="downloadapp-child">
+                    <span class="material-symbols-outlined">
+                        hd
+                        </span>
+                    <span class="span-uploadvid">Higher video quality</span>
+                </div>
+                <div class="downloadapp-child">
+                    <i class="fa-regular fa-square-caret-right"></i>
+                    <span class="span-uploadvid">Smoother experience</span>
+                </div>
+                <div class="downloadapp-child lastbox-downloadapp-child">
+                    <i class="fa-regular fa-circle-down"></i>
+                    <span class="span-uploadvid">Download videos and watch offline</span>
+                </div>
+                <div class="downloadapp-child lastlast-child-downloadapp">
+                    <p class="p-downloadapp">Scan the QR code or<a class="app-link" href="https://play.google.com/store/apps/details?id=com.bstar.intl&hl=en-US&pli=1"> click the link </a>to download the App</p>
+                    <img class="qrcode" src="/pictures/Screenshot 2025-05-07 224724.png" alt="">
+                </div>
+            </div>
+            <!-- end -->
+
+             <a style="text-decoration: none; color: black;" href="/topup/topup.html"><button class="btn-topup"><i class="fa-solid fa-circle-bolt"></i><i class="fa-solid fa-bolt"></i> Top up</button></a>
+
+
+            <button class="btn-premium"id="btn-premium"><i class="fa-regular fa-gem"></i> Premium</button><!-- premium button -->
+            
+             <!-- popups when clicks downloadapp icon  -->
+             <div id="popup-box-premium" class="popup-box-premium">
+                <div class="premium-child premium-child-firstbox">
+                        <div class="premium-gs"><p class="premium-title">Premium Benefits</p></div>
+                        <div class="premium-gs sec-gs-premium"><svg class="go-premium-arrow" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
+                </div>
+                <div class="premium-child hoverbox-premium">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m160-800 80 160h120l-80-160h80l80 160h120l-80-160h80l80 160h120l-80-160h120q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800Zm0 240v320h640v-320H160Zm0 0v320-320Z"/></svg>
+                    <span class="span-uploadvid">Premium Only</span>
+                </div>
+                <div class="premium-child hoverbox-premium">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M240-400q0 52 21 98.5t60 81.5q-1-5-1-9v-9q0-32 12-60t35-51l113-111 113 111q23 23 35 51t12 60v9q0 4-1 9 39-35 60-81.5t21-98.5q0-50-18.5-94.5T648-574q-20 13-42 19.5t-45 6.5q-62 0-107.5-41T401-690q-39 33-69 68.5t-50.5 72Q261-513 250.5-475T240-400Zm240 52-57 56q-11 11-17 25t-6 29q0 32 23.5 55t56.5 23q33 0 56.5-23t23.5-55q0-16-6-29.5T537-292l-57-56Zm0-492v132q0 34 23.5 57t57.5 23q18 0 33.5-7.5T622-658l18-22q74 42 117 117t43 163q0 134-93 227T480-80q-134 0-227-93t-93-227q0-129 86.5-245T480-840Z"/></svg>
+                    <span class="span-uploadvid">Early Watching</span>
+                </div>
+                <div class="premium-child hoverbox-premium">
+                    <span class="material-symbols-outlined">
+                        hd
+                        </span>
+                    <span class="span-uploadvid">HD Resolution</span>
+                </div>
+                <div class="premium-child hoverbox-premium">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M80-160v-120h80v-440q0-33 23.5-56.5T240-800h600v80H240v440h240v120H80Zm520 0q-17 0-28.5-11.5T560-200v-400q0-17 11.5-28.5T600-640h240q17 0 28.5 11.5T880-600v400q0 17-11.5 28.5T840-160H600Zm40-120h160v-280H640v280Zm0 0h160-160Z"/></svg>
+                    <span class="span-uploadvid">Multi-Platform</span>
+                </div>
+                <div class="premium-child hoverbox-premium">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M160-80v-80h640v80H160Zm320-160L200-600h160v-280h240v280h160L480-240Zm0-130 116-150h-76v-280h-80v280h-76l116 150Zm0-150Z"/></svg>
+                    <span class="span-uploadvid">Free Downloads</span>
+                </div>
+                <div class="premium-child hoverbox-premium">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m791-56-64-64H200q-33 0-56.5-23.5T120-200v-527l-64-65 56-56 736 736-57 56ZM200-200h447L200-647v447Zm640-33-80-80v-327H433L233-840h527q33 0 56.5 23.5T840-760v527Z"/></svg>
+                    <span class="span-uploadvid">Skip ads</span>
+                </div>
+                <button class="btnJoin">Join Premium</button>
+            </div>
+
+            <svg class="more" xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"/></svg>
+            <!-- end -->
+
+
+            <a style="text-decoration: none;" href="/myProfile/myprofile.html"><img class="profile-icon" id="profile-icon" src="/pictures/profile-icon.png" alt=""></a>
+            <div id="popup-box-profile-icon" class="popup-box-profile-icon">
+                <div class="profile-child profile-child-firstbox">
+                        <div class="profile-gs">
+                            <img src="/pictures/profile-icon.png" alt="" class="profile-pic">
+                            <p class="profile-name">Sai_8123</p>
+                        </div>
+                </div>
+                <div class="profile-child hoverbox-profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                    <span class="span-uploadvid">System Message</span>
+                </div>
+                <a style="text-decoration: none; color: black;" href="/myProfile/myprofile.html"><div class="profile-child hoverbox-profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>     
+                    <span class="span-uploadvid">My Profile</span>
+                </div></a>
+                <div class="profile-child hoverbox-profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M440-320v-326L336-542l-56-58 200-200 200 200-56 58-104-104v326h-80ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                    <span class="span-uploadvid">Creator Center</span>
+                </div>
+                <div class="profile-child hoverbox-profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"/></svg>     <span class="span-uploadvid">Language:English</span>
+                </div>
+                <div class="profile-child hoverbox-profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>      <span class="span-uploadvid">Send Feedback</span>
+                </div>
+                <div class="profile-child hoverbox-profile-last">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"/></svg>  <span class="span-uploadvid">Logout</span>
+                </div>
+            </div>
+            <!-- end -->
+        </div>
+    </section>
+    <!-- header-end -->
+
+
+    <!-- sidebar part -->
+    <section class="sidebar">
+        <div class="sidebar-mainbox" id="sidebar-mainbox">
+            <div class="sidebar-childboxes sidebar-childbox-one">
+                <a style="text-decoration: none; color: black;" href="/main/index.html"><div class="menu-tags menu-home-tag" id="menu-home-tag"><i class="fa-solid fa-house"></i><span class="span-home" id="span-home">Home</span></div></a>
+                <a style="text-decoration: none; color: black;" href="/anime/anime.html"><div class="menu-tags menu-anime-tag" id="menu-anime-tag" ><i class="fa-solid fa-tv"></i><span class="span-anime" id="span-anime">Anime</span></div></a>
+                <a style="text-decoration: none; color: black;" href="/trending/trending.html"><div class="menu-tags menu-trending-tag" id="menu-trend-tag"><i class="fa-solid fa-fire"></i><span class="span-trending" id="span-trend">Trending</span></div></a>
+                <div class="menu-tags menu-category-tag" id="menu-cat-tag"><i class="fa-solid fa-table-list"></i><span class="span-category" id="span-cat">Category</span></div>
+            </div>
+            <div class="sidebar-childboxes sidebar-childbox-two"></div>
+            <div class="sidebar-childboxes sidebar-childbox-three"></div>
+
+            <div class="followings" id="followings">
+                <div class="side-following"><p class="side-following-title">Following</p></div>
+                <div class="side-following side-following-accounts"><img class="accounts-icon" src="/pictures/profile-icon.png" alt=""><p class="side-following-p-acc">Seong_Su</p></div>
+                <div class="side-following side-following-accounts"><img class="accounts-icon" src="/pictures/profile-icon.png" alt=""><p class="side-following-p-acc">Jenny_</p></div>
+                <div class="side-following side-following-accounts"><img class="accounts-icon" src="/pictures/profile-icon.png" alt=""><p class="side-following-p-acc">Lawrence_</p></div>
+            </div>
+            <div class="side-footer" id="side-footer">
+                <div class="side-footer-box">
+                    <a href="" class="a-all aboutus">About us</a>
+                    <a href="" class="a-all contactus">Contact us</a>
+                    <a href="" class="a-all getapp">Get App</a>
+                </div>
+                <div class="side-footer-box">
+                    <a href="" class="a-all tos">Terms of Service</a>
+                    <a href="" class="a-all privacy-policy">Privacy Policy</a>
+                </div>
+                <div class="side-footer-box">
+                    <a href="" class="a-all prfcv">Punishment Rules for Content Violations</a>
+                </div>
+                <div class="side-footer-box">
+                    <a href="" class="a-all prfav">Punishment Rules for Account Violations</a>
+                </div>
+                <div class="side-footer-box">
+                    <a href="" class="a-all infringement-Complaint">Infringement Complaint</a>
+                </div>
+                <div class="side-footer-box"><p class="all-right-reserve">© 2025 BiliBili</p></div>
+                <div class="side-footer-box"></div>
+                <div class="side-footer-box"></div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- content part -->
+   <section class="content" id="content">
+    <div class="main-container">
+        <div class="profile-cont">
+            <div class="c-border profile-pic-left-box">
+                <img src="/pictures/profile-icon.png" alt="" class="profilee">
+            </div>
+            <div class="c-border profile-desc-right-box">
+                <div class="profile-desc-childboxes titleee"><p>Sai_8123</p></div>
+                <div class="profile-desc-childboxes desccc"><p>ID 1562775912</p></div>
+            </div>
+        </div>
+
+        <div class="payment-method-parent-cont">
+            <div class="payment-method-parent-childboxes payment-method"><p>Payment Method</p></div>
+            <div class="payment-method-parent-childboxes countryy">
+                Philippines 
+                <svg class="chevronn" xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -960 960 960" width="14px" fill="#FFFFFF"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+            </div>
+        </div>
+        <div class="payment-cont">
+            <div class="c-border payment-pic-left-box">
+                <img src="/pictures/GrabPay.png" alt="" class="payment-logo">
+            </div>
+            <div class="c-border payment-desc-middle-box">
+                <div class="payment-desc-childboxes payment-name"><p>GrabPay</p></div>
+                <div class="payment-desc-childboxes coins-and-php">
+                    <img src="/pictures/star.png" alt="" class="star-icon">
+                    <p>1≈0.66 PHP</p>
+                </div>
+            </div>
+
+            <div class="c-border payment-desc-right-box" id="arrowup">
+                <svg class="arrow arrow-up" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-424-56-56 280-280 280 280-56 56-224-223-224 223Z"/></svg>
+                <svg class="arrow arrow-down hidden" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+            </div>
+        </div>
+
+
+
+        <!-- Popups -->
+        <div class="payment-maincont" id="payment-maincont">
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">76</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">50 PHP</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">150</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">100 PHP</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">452</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">300 PHP</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">757</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">500 PHP</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">2278</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">1500 PHP</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">4557</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">3000 PHP</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">7621</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">5000 PHP</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">27700</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue phplast">18000 PHP</p>
+            </div>
+        </button>
+    </div>
+    <!-- popups-end -->
+
+    <div class="payment-cont">
+            <div class="c-border payment-pic-left-box">
+                <img src="/pictures/gcash.png" alt="" class="payment-logo">
+            </div>
+            <div class="c-border payment-desc-middle-box">
+                <div class="payment-desc-childboxes payment-name"><p>GCash</p></div>
+                <div class="payment-desc-childboxes coins-and-php">
+                    <img src="/pictures/star.png" alt="" class="star-icon">
+                    <p>1≈0.65 PHP</p>
+                </div>
+            </div>
+
+            <div class="c-border payment-desc-right-box" id="arrowup2">
+                <svg class="arrow arrow-down2 " xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                <svg class="arrow arrow-up2 hidden" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-424-56-56 280-280 280 280-56 56-224-223-224 223Z"/></svg>
+            </div>
+        </div>
+
+         <!-- Popups2 -->
+        <div class="payment-maincont2" id="payment-maincont2">
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">75</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">50 PHP</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">152</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">100 PHP</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">457</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">300 PHP</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">765</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">500 PHP</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">2304</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">1500 PHP</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">4608</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">3000 PHP</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">7706</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">5000 PHP</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">38702</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue phplast">25000 PHP</p>
+            </div>
+        </button>
+    </div>
+    <!-- popups2-end -->
+    <div class="divider"></div>
+
+    <div class="payment-cont cont3">
+            <div class="c-border payment-pic-left-box leftbox3">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M880-720v480q0 33-23.5 56.5T800-160H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720Zm-720 80h640v-80H160v80Zm0 160v240h640v-240H160Zm0 240v-480 480Z"/></svg>
+            </div>
+            <div class="c-border payment-desc-middle-box middlebox3 middle">
+                <div class="payment-desc-childboxes payment-name">
+                    <p>Add credit card</p>
+                </div>
+                <div class="payment-desc-childboxes coins-and-php middle">
+                    <img src="/pictures/star.png" alt="" class="star-icon">
+                    <p>1≈0.11 USD</p>
+                </div>
+                <div class="payment-desc-childboxes coins-and-php middle">
+                    <img src="/pictures/visa.png" alt="" class="visa">
+                    <img src="/pictures/card.png" alt="" class="visa sec-visa">
+                </div>
+            </div>
+
+            <div class="c-border payment-desc-right-box rightbox3" id="arrowup3" >
+                <svg class="arrow arrow-down3 " xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                <svg class="arrow arrow-up3 hidden" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-424-56-56 280-280 280 280-56 56-224-223-224 223Z"/></svg>
+            </div>
+
+        </div>
+
+
+         <!-- Popups3 -->
+        <div class="payment-maincont3" id="payment-maincont3">
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">47</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">0.86 USD</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">124</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">1.71 USD</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">202</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">2.57 USD</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">742</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">855 USD</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">2289</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">25.66 USD</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">7692</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">85.52 USD</p>
+            </div>
+        </button>
+        <button class="payment-coins">
+            <div class="insidecoin-andvalue">
+            <img src="/pictures/star.png" alt="" class="insidecoins">
+            <p class="coinValue">38538</p>
+            </div>
+            <div class="insidecoin-andvalue">
+            <p class="phpvalue">427.58 USD</p>
+            </div>
+        </button>
+    </div>
+    <!-- popups3-end -->
+
+    <div class="topupbtnparent">
+        <div class="paragggggggg"><p>By tapping Top up, you agree to the <span class="agreement" style="color: rgb(54, 171, 255);">"Star Topping-up Agreement"</span> </p></div>
+        <div class="btntopupp"><button class="topupbtnn">Top Up</button></div>
+    </div>
+    
+    
+    </div> <!-- main-container-end -->
+
+    </section>
+
+    <script src="/main/main.js"></script>
+    <script src="/main/sidebar-responsive.js"></script>
+    <script src="popupspayment.js"></script>
+</body>
+</html>

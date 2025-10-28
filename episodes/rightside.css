@@ -1,0 +1,189 @@
+.Episode-title-parent, .Series-title-parent {
+    width: 100%;
+    height: 40px;
+}
+
+.episode-title, .series-title-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.episodes-numbers-parent {
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    padding: .5rem 0;
+}
+.pv-and-more {
+    padding-left: 2rem;
+    color: rgb(95, 95, 95);
+    cursor: pointer;
+}
+.epp {
+text-decoration: underline;
+text-underline-offset: 4px;
+text-decoration-thickness: 2px;
+}
+.epp, .pv-and-more {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.episodes-buttons {
+    display: inline-block;
+    width: 100%;
+
+}
+.episodes {
+    background-color: rgb(220, 218, 218);
+    width: 80px;
+    height: 50px;
+    margin: 2px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(99, 99, 99);
+}
+.episodes:hover {
+    background-color: rgb(185, 184, 184);
+
+}
+
+.Series-title-parent {
+    display: flex;
+   padding-top: 1.5rem;
+}
+
+
+
+
+.thumbnails-boxes {
+    width: 98%;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    margin: 1rem 0;
+}
+.thumbnail-img-first {
+    background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/jujutsu-kaisen.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+
+}
+
+.thumbnail-img-second {
+    background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/jujutsu-kaisen-s2.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  
+}
+
+.thumbnail-img-third {
+    background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/second-thumbnail.jpeg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  
+}
+
+.thumbnail-img-fourth {
+    background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/sakamoto.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  
+}
+
+.thumbnail-img-fifth {
+    background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/bungo-stray-dogs.png') no-repeat center / cover;
+  border-radius: 7px;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  
+}
+
+.thumbnail-img-sixth {
+    background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/windbreaker.jpg') no-repeat center / cover;
+  border-radius: 7px;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  
+}
+
+.thumbnail-img-seventh {
+    background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/blackbutler.png') no-repeat center / cover;
+  border-radius: 7px;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  
+}
+
+.thumbnail-img-eight {
+    background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%),
+  url('/pictures/kakegurui.png') no-repeat center / cover;
+  border-radius: 7px;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  
+}
+
+
+
+
+.thumbnail-inside-parag {
+    display: flex;
+    justify-content: end;
+    padding-top: 4.5rem;
+    margin-right: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+}
+.thumbnail-text {
+    margin-left: .5rem;
+}
+.series-title{
+    width: 100%;
+    font-size: 17px;
+    cursor: pointer;
+}
+.parag-holder-thumbnail {
+    width: 100%;
+    font-size: 12px;
+    color: gray;
+    
+}
+.parag-holder-thumbnail-bottom {
+    width: 100%;
+    font-size: 12px;
+    color: gray;
+    margin-top: 50px;
+    
+}

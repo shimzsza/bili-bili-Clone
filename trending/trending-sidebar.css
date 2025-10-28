@@ -1,0 +1,142 @@
+.sidebar-mainbox {
+    width: 260px;
+    height: 900px;
+    position: fixed;
+    top: 63px;
+    z-index: 998;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar-childbox-one {
+    width: 100%;
+}
+.menu-home-tag, .menu-anime-tag, .menu-trending-tag, .menu-category-tag {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+/*Home section*/
+.menu-trending-tag {
+    background-color: rgb(226, 244, 252);
+}
+.span-trending {
+    font-weight: bold;
+}
+.menu-trending-tag:hover {
+    cursor: pointer;
+    background-color: rgb(208, 239, 253);
+}
+.menu-anime-tag:hover, .menu-home-tag:hover, .menu-category-tag:hover {
+    cursor: pointer;
+   background-color: rgb(222, 222, 222);
+}
+.fa-house, .fa-tv, .fa-fire, .fa-table-list, .span-home, .span-anime, .span-trending, .span-category, .side-following-title, .accounts-icon, .side-following-p-acc {
+    margin-left: 2rem;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+}
+
+.side-following-title {
+    margin-top: 50px;
+    color: grey;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.side-following-accounts {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.side-following-accounts:hover {
+    cursor: pointer;
+}
+.accounts-icon{
+    width: 30px;
+    border-radius: 100%;
+}
+
+.side-footer {
+    margin-top: 30px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.side-footer-box {
+    display: flex;
+    gap: 10px;
+    margin-left: 2rem;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+.a-all {
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+}
+.a-all:hover {
+    color: darkblue;
+}
+.all-right-reserve {
+    margin-top: 30px;
+    color: gray;
+}
+
+
+
+
+
+
+
+/* Desktop styles */
+@media (min-width: 1200px) {
+  /* styles for desktop */
+}
+
+
+
+
+
+
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .sidebar-mainbox {
+    width: 80px;
+  }
+
+  .menu-home-tag, .menu-anime-tag, .menu-trending-tag, .menu-category-tag {
+    display: block;
+    width: 80px;
+    padding-top: 1.5rem;
+    height: 80px;
+}
+
+.span-home, .span-anime, .span-trending, .span-category {
+    font-size: 10px;
+    margin-left: 1.7rem;
+}
+
+.followings, .side-footer {
+    display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    .sidebar-mainbox {
+    display: none;
+  }
+}
+
+

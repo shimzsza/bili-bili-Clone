@@ -1,0 +1,450 @@
+.content {
+    position: relative;
+    top: 63px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(228, 229, 230, 0.349);
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 5rem;
+}
+.background-first-sec {
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(to right, rgb(44, 0, 0) 0%, transparent 70%),
+    url('/pictures/tokyo-ghoul.jpg') no-repeat center / cover;
+
+    -webkit-mask-image: linear-gradient(to top, transparent 90%, black 30%);
+    mask-image: linear-gradient(to top, transparent 0%, black 30%);
+    padding-top: 5rem;
+    padding-left: 5rem;
+    
+
+}
+
+.animename-cont {
+    width: 700px;
+    height: 500px;
+}
+
+.ad {
+    width: 100%;
+}
+
+.anime-logo {
+    height: 200px;
+    width: 200px;
+}
+
+.animeelogo {
+    width: 600px; 
+    text-align: center;
+}
+
+.anime-category {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.anime-desc {
+    height: auto;
+}
+.anime-twobuttons {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    align-items: center;
+    
+}
+
+.catFlex {
+    padding: .4rem 1rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    cursor: default;
+}
+
+.ax {
+    margin-left: 1rem;
+    color: white;
+}
+
+
+.pax {
+    font-size: 14px;
+}
+
+.anime-descc {
+    color: white;
+    width: 100%;
+}
+
+.twobuttons {
+    width: 150px;
+    height: 40px;
+}
+
+.playnowbtn {
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+.mylistbtn {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white; 
+    font-weight: bold;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+.sched-leftbox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem;
+
+}
+.anime-title {
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 2rem;
+}
+.continue-watching {
+    width: 100%;
+    height: auto;
+    padding-left: 5rem;
+}
+.title-continue-watching {
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 1rem 0;
+}
+.continue-watching-thumbnails-cont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(300px);
+    width: 60%;
+    gap: 1rem;
+}
+.continue-watching-thumbnails-boxes {
+    width: 200px;
+    height: 200px;
+}
+.continue-watching-thumbnails-pic {
+    width: 200px;
+    height: 110px;
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: cover;
+}
+.continue-watching-thumbnails-title {
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+.continue-watching-thumbnails-title:hover {
+color: rgba(2, 172, 224, 0.9);
+}
+.continue-watching-thumbnails-text {
+    padding-top: 10px;
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+}
+
+
+/* release calendar */
+.release-calendar {
+    width: 100%;
+    padding: 0 5rem;
+    height: 60px;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.release-calendar-flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.release-calendar-boxes {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.release-calendar-boxes-firstbox {
+    font-size: 25px;
+    font-weight: bold;
+    width: 600px;
+    height: 100%;
+}
+.release-calendar-boxes-secondbox {
+    font-size: 25px;
+    font-weight: bold;
+    width: 400px;
+    height: 100%;
+    padding-left: 1rem;
+}
+.release-calendar-boxes-thirdbox {
+    font-size: 25px;
+    font-weight: bold;
+    width: 900px;
+    height: 100%;
+}
+.release-calendar-boxes-fourthbox {
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+
+.LatestUpdates {
+    width: 150px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0rem 1.5rem;
+    gap: 1rem;
+    font-weight: bold;
+    
+}
+
+.weekss {
+    font-size: 14px;
+    margin-left: 1rem;
+    text-align: center;
+    font-weight: 100;
+    color: rgb(66, 66, 66);
+}
+
+.viewmorediv {
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.viewmore {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+}
+
+.arrowright {
+    margin-left: .5rem;
+}
+
+.weekepisodes {
+    width: 100%;
+}
+
+
+.weekepisodes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: minmax(300px);
+    padding: 0 5rem;
+    gap: 1rem;
+    
+}
+
+.continue-watching-thumbnails-boxes2 {
+     width: 200px;
+    height: 200px;
+}
+
+
+/* Desktop styles */
+@media (min-width: 1200px) {
+  /* styles for desktop */
+}
+
+
+
+
+
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .background-first-sec {
+    width: 100%;
+    height: 600px;
+}
+
+.animename-cont {
+    width: 400px;
+    height: 500px;
+}
+
+.ad {
+    width: 100%;
+}
+
+.animeelogo {
+    width: 100%;
+}
+
+.anime-category {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.anime-desc {
+    height: 100px;
+    width: 100%;
+
+}
+
+.weekepisodes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(300px);
+    padding: 0 5rem;
+    gap: 1rem;
+    width: 50%;
+    
+}
+.continue-watching-thumbnails-boxes2 {
+     width: 200px;
+    height: 150px;
+    
+}
+
+.weekepisodes {
+    width: 100%;
+}
+
+}
+
+
+
+
+
+/* Mobile styles */
+@media (max-width: 767px) {
+ .background-first-sec {
+    width: 100%;
+    height: 500px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+.animename-cont {
+    width: 350px;
+    height: 300px;
+}
+
+.ad {
+    width: 100%;
+}
+
+.animeelogo {
+    width: 250px;
+}
+
+.anime-logo {
+    height: 100px;
+}
+
+.anime-category {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.anime-desc {
+    height: auto;
+    width: 100%;
+
+}
+
+
+
+
+/* trend */
+.sched-leftbox {
+    padding: 1rem 1rem;
+
+}
+
+.weekepisodes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(300px);
+    padding: 0 5rem;
+    gap: 1rem;
+    
+}
+
+/* continue watching part */
+.continue-watching {
+    width: 100%;
+    height: auto;
+    padding-left: 1rem;
+}
+
+.continue-watching-thumbnails-cont {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(300px);
+    width: 60%;
+    gap: 1rem;
+}
+
+
+.continue-watching-thumbnails-boxes2 {
+     width: 200px;
+    height: 150px;
+    margin-top: 1rem;
+}
+
+.weekepisodes {
+    width: 100%;
+    padding: 0 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.release-calendar-boxes-secondbox {
+    display: none;
+}
+.release-calendar-boxes-thirdbox {
+    display: none;
+}
+.release-calendar {
+    width: 100%;
+    padding: 0 1rem;
+    height: 60px;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+}
+}
+
+
